@@ -4,6 +4,13 @@ import { Button } from 'antd';
 import { Input } from 'antd';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { Row, Col } from 'antd';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch
+  } from "react-router-dom";
 const { Header, Footer, Sider, Content } = Layout;
 
 function Signup() {
@@ -42,6 +49,8 @@ function Signup() {
                         </Row> 
                         <Row style={{paddingTop:10}} justify="center">
                             <Button type="primary" >Sign up</Button>
+                            {/* <Router><Link to="./Login">Loginaaaa</Link></Router> */}
+                            
                         </Row>
                     </Col>
                 </Row>
